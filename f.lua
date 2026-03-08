@@ -163,7 +163,7 @@ local function setSpeed(s)
 end
 
 local function melodyOnly(notes)
-    local out={},i=1
+    local out,i = {},1
     while i<=#notes do
         local bt=notes[i].time; local best=notes[i]; local j=i+1
         while j<=#notes and notes[j].time-bt<0.025 do
